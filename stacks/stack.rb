@@ -1,3 +1,5 @@
+require 'pry'
+
 class Node
   attr_accessor :value, :next_node
 
@@ -19,10 +21,10 @@ class Stack
     @head = Node.new(first_value) if first_value
   end
 
-  def push
+  def push(value)
     # pushes a node into the stack
     node = Node.new(value)
-    node.next_node = @head.new_node
+    node.next_node = @head
     @head = node
   end
 
@@ -33,4 +35,10 @@ class Stack
     node
   end
 
+  def peek
+    @head.value
+  end
+
 end
+
+binding.pry
