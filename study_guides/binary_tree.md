@@ -2,12 +2,6 @@
 
 ### What is it?
 Is a tree data structure in which each node has at most two children, referred to as the ﻿left child and the right child. Right and left child is determined based on a comparison to the parent node, where the left child is typically less than the parent and the right child is greater than the parent.
-'''
-Example:                              F  (root node)
-                                     / \
-                                    E   L
-                                       / \
-                                      J   O'''
 
 ### When would we use it?
 When a linear data structure is too slow, implies we need traverse the data constantly and frequently. Also when insertion speed in a b-tree structure is too slow. An example is where we have a list of web site addresses that we need to compare and we can store each letter of the web site address as a leaf in the tree.
