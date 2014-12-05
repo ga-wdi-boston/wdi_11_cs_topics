@@ -1,4 +1,5 @@
 B-tree Questions
+
 1. What?
 It is a tree data structure where parent nodes may have more than 2 child nodes
 
