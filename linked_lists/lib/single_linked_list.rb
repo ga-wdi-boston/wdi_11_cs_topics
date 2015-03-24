@@ -1,7 +1,8 @@
 require 'pry'
 
-class SinglyLinkedList
+class SingleLinkedList
   attr_accessor :head
+
 
   def initialize(first_value=nil)
     # initializes the linked list
@@ -112,7 +113,6 @@ class SinglyLinkedList
     puts node.to_s
   end
 
-
   class Node
     attr_accessor :value, :next
 
@@ -125,11 +125,9 @@ class SinglyLinkedList
       @value || nil
     end
   end
-
 end
 
-
-
+=begin
 s = SinglyLinkedList.new("a")
 binding.pry
 s.append("b")
@@ -166,3 +164,4 @@ puts s.reverse.to_s
 puts "destructive reverse"
 s.reverse!
 s.to_s
+=end

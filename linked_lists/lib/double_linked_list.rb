@@ -53,10 +53,10 @@ class Node
     puts @node_data.to_s
   end
 end
- 
+
 #Doubly Linked List class
 # @author Matt Lampe
-class DoublyLinkedList
+class DoubleLinkedList
    #empty constructor
    def initialize()
      @root_node = nil
@@ -115,7 +115,7 @@ class DoublyLinkedList
       end
     end
 end
- 
+
 #methods in case nil is returned instead of node
 def nil.set_prev(node)
 end
