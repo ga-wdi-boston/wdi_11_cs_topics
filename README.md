@@ -45,3 +45,6 @@ Tower of Hanoi
 Travelling Salesman
 Prisoner's Dilemma
 Game of Life
+
+![XKCD 835](http://imgs.xkcd.com/comics/tree.png)
+http://xkcd.com/835/
