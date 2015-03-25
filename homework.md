@@ -6,6 +6,8 @@ You are encouraged to make each of these into a blog post on the platform of you
 
 After someone who isn't familiar with one of these sets of topics reads these they should have at least a passable understanding of the concept described.
 
+By 9am the next morning you must send a link to a Github repo or webpage with your essay in the Slack main room.
+
 ## Monday
 
 Write an essay describing Queue, Stack, Linked Lists; what they are, how they are different, why we use them. It may be useful to include pseudocode, code, analogies, diagrams and references to external sources.
