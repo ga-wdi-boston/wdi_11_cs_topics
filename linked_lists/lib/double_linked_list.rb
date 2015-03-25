@@ -1,123 +1,122 @@
-#Node class for a doubly linked list
-# @author Matt Lampe
 class Node
-  #instance members for prev and next node
-  @next_node = nil
-  @prev_node = nil
-  #empty constructor
-  def initialize()
-    @node_data = nil
-  end
-  #constructor with initial data
-  def initialize(data)
-    @node_data = data
-  end
-  #set the next node link
-  def set_next(node)
-    @next_node = node
-  end
-  #set the previous node link
-  def set_prev(node)
-    @prev_node = node
-  end
-  #return the next node
-  def get_next()
-    return @next_node
-  end
-  #return the previous node
-  def get_prev()
-    return @prev_node
-  end
-  #return true if linked to next node; else false
-  def has_next?()
-    if @next_node
-      return true
-    else
-      return false
-    end
-  end
-  #return true if linked to previous node; else false
-  def has_prev?()
-    if @prev_node
-      return true
-    else
-      return false
-    end
-  end
-  #getter method for retrieving node data
-  def get_node_data()
-    return @node_data
-  end
-  #toString method for node
-  def print()
-    puts @node_data.to_s
+  attr_accessor :value, :next_node, :prev_node
+
+  def initialize(value = nil)
+    @value = value
+    @next_node = nil
+    @prev_node = nil
   end
 end
 
-#Doubly Linked List class
-# @author Matt Lampe
 class DoubleLinkedList
-   #empty constructor
-   def initialize()
-     @root_node = nil
-   end
-   #constructor that takes an initial node
-   def initialize(node)
-     @root_node = node
-   end
-   #insert a node at the tail of the list
-   def insert_tail(node)
-     current_node = @root_node
-     while current_node.has_next?()
-       current_node = current_node.get_next()
-     end
-     current_node.set_next(node)
-     node.set_prev(current_node)
-   end
-   #insert a node at the head of the list
-   def insert_head(node)
-     if @root_node.nil?
-       @root_node = node
-     else
-       @root_node.set_prev(node)
-       node.set_next(@root_node)
-       @root_node = node
-     end
-       current_node = @root_node.get_next()
-       while current_node
-         current_node = current_node.get_next()
-       end
-   end
-   #delete a node by value
-   def delete_node(node_value)
-     current_node = @root_node
-       if current_node.get_node_data() == node_value
-         @root_node = @root_node.get_next()
-         @root_node.set_prev(nil)
-         current_node = nil
-       else
-         while current_node.has_next?()
-         current_node = current_node.get_next()
-            if current_node.get_node_data() == node_value
-              current_node.get_prev().set_next(current_node.get_next())
-              current_node.get_next().set_prev(current_node.get_prev())
-              return
-            end
-         end
-       end
+  attr_accessor :head, :tail
+
+  def initialize(value = nil)
+    @head = nil
+    @tail = nil
+    if value
+      @head = Node.new(value)
     end
-    #toString method for the list
-    def print()
-      current_node = @root_node
-      while current_node != nil
-        current_node.print()
-        current_node = current_node.get_next()
-      end
+  end
+
+  def append(value)
+    node = Node.new(value)
+    if empty?
+      @head = node
+    elsif self.length == 1
+      @tail = node
+      @head.next_node = @tail
+      @tail.prev_node = @head
+    else
+      node.prev_node = @tail
+      @tail.next_node = node
     end
+    @tail = node
+  end
+
+  def prepend(value)
+    node = Node.new(value)
+    if empty?
+      @head = node
+      @tail = node
+    elsif self.length == 1
+      @tail = @head
+      @tail.prev_node = @head
+      @tail.next_node
+      @head = node
+    else
+      node.next_node = @head
+      @head.prev_node = node
+      @head = node
+    end
+  end
+
+  def length
+    count = 0
+    node = @head
+    while node do
+      count += 1
+      node = node.next_node
+    end
+    count
+  end
+
+  def find(value)
+    node = @head
+    while node do
+      return node if node.value == value
+      node = node.next_node
+    end
+  end
+
+  def insert_after(node, new_node)
+    if node.next_node
+      new_node.next_node = node.next_node
+      new_node.prev_node = node
+      node.next_node = new_node
+    else
+      node.next_node = new_node
+      new_node.prev_node = node
+      @tail = new_node
+    end
+    self
+  end
+
+  private
+  def empty?
+    length <= 0
+  end
 end
 
-#methods in case nil is returned instead of node
-def nil.set_prev(node)
+class EmptyListError < StandardError
+  attr_reader :object
+
+  def initialize(object)
+    @object = object
+  end
 end
-def nil.set_next(node)
+
+class NodeNotFoundError < StandardError
+  attr_reader :object
+
+  def initialize(object)
+    @object = object
+  end
 end
+
+=begin
+begin
+  raise EmptyListError.new(object), "You cannot insert_after into an empty list"
+rescue EmptyListError => e
+  puts e.message # => "a message"
+  # puts e.object # => "an object"
+end
+
+begin
+  raise NodeNotFoundError.new(object),'Node not found'
+rescue NodeNotFoundError => e
+  puts e.message
+  # puts e.object
+end=end
+
+
