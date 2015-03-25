@@ -23,3 +23,7 @@ Write an essay describing the sorts that we have practiced (bubble, merge, inser
 ## Thursday
 
 Write an essay describing the paradigms of *functional programming* and *object oriented programming*; what they are, how they are different, strengths/weakenesses, why we use them. It may be useful to include pseudocode, code, analogies, diagrams and references to external sources.
+
+### Bonus
+
+For any/all of the above, you are encouraged to find (and document/create) an interactive way to demonstrate the concept.
