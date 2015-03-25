@@ -1,5 +1,8 @@
 # General Assembly Computer Science
 
+![XKCD 835](http://imgs.xkcd.com/comics/tree.png)
+http://xkcd.com/835/
+
 ## Instructions
 
 Tables will be set up by topic around the room. You will eventually visit all tables. You're working in groups, but your progress is self-paced. Start at either the Stack, Queue or Linked List tables. Work with others to complete all tasks for the topics of that table.
@@ -137,39 +140,39 @@ Tables will be set up by topic around the room. You will eventually visit all ta
 
 ### Bubble Sort
 
-* Watch [Harvard CS50 on FOO]()
-* Read [Harvard CS50 on FOO]() and the [Wikipedia on FOO]()
-* In your notes, describe in your own words how a FOO sort works and how you might describe it to someone else.
-* In your notes, manually diagram how a FOO sort works over a small dataset
-* Following the tests we have provided, implement a FOO sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
-* In your notes, describe when a FOO sort might be useful. Write down its worst-case complexity time for FOO sorts. How is the FOO sort different from other sorts?
+* Watch [Harvard CS50 on Bubble Sort](https://www.youtube.com/watch?v=8Kp-8OGwphY)
+* Read [Harvard CS50 on Bubble Sort](https://study.cs50.net/bubble_sort) and the [Wikipedia on Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort)
+* In your notes, describe in your own words how a Bubble Sort sort works and how you might describe it to someone else.
+* In your notes, manually diagram how a Bubble Sort sort works over a small dataset
+* Following the tests we have provided, implement a Bubble Sort sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
+* In your notes, describe when a Bubble Sort sort might be useful. Write down its worst-case complexity time for Bubble Sort sorts. How is the Bubble Sort sort different from other sorts?
 
 ### Insertion Sort
 
-* Watch [Harvard CS50 on FOO]()
-* Read [Harvard CS50 on FOO]() and the [Wikipedia on FOO]()
-* In your notes, describe in your own words how a FOO sort works and how you might describe it to someone else.
-* In your notes, manually diagram how a FOO sort works over a small dataset
-* Following the tests we have provided, implement a FOO sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
-* In your notes, describe when a FOO sort might be useful. Write down its worst-case complexity time for FOO sorts. How is the FOO sort different from other sorts?
+* Watch [Harvard CS50 on Insertion Sort](https://www.youtube.com/watch?v=DFG-XuyPYUQ)
+* Read [Harvard CS50 on Insertion Sort](https://study.cs50.net/insertion_sort) and the [Wikipedia on Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
+* In your notes, describe in your own words how a Insertion Sort sort works and how you might describe it to someone else.
+* In your notes, manually diagram how a Insertion Sort sort works over a small dataset
+* Following the tests we have provided, implement a Insertion Sort sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
+* In your notes, describe when a Insertion Sort sort might be useful. Write down its worst-case complexity time for Insertion Sort sorts. How is the Insertion Sort sort different from other sorts?
 
 ### Merge Sort
 
-* Watch [Harvard CS50 on FOO]()
-* Read [Harvard CS50 on FOO]() and the [Wikipedia on FOO]()
-* In your notes, describe in your own words how a FOO sort works and how you might describe it to someone else.
-* In your notes, manually diagram how a FOO sort works over a small dataset
-* Following the tests we have provided, implement a FOO sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
-* In your notes, describe when a FOO sort might be useful. Write down its worst-case complexity time for FOO sorts. How is the FOO sort different from other sorts?
+* Watch [Harvard CS50 on Merge Sort](https://www.youtube.com/watch?v=EeQ8pwjQxTM)
+* Read [Harvard CS50 on Merge Sort](https://study.cs50.net/merge_sort) and the [Wikipedia on Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
+* In your notes, describe in your own words how a Merge Sort sort works and how you might describe it to someone else.
+* In your notes, manually diagram how a Merge Sort sort works over a small dataset
+* Following the tests we have provided, implement a Merge Sort sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
+* In your notes, describe when a Merge Sort sort might be useful. Write down its worst-case complexity time for Merge Sort sorts. How is the Merge Sort sort different from other sorts?
 
 ### Selection Sort
 
-* Watch [Harvard CS50 on FOO]()
-* Read [Harvard CS50 on FOO]() and the [Wikipedia on FOO]()
-* In your notes, describe in your own words how a FOO sort works and how you might describe it to someone else.
-* In your notes, manually diagram how a FOO sort works over a small dataset
-* Following the tests we have provided, implement a FOO sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
-* In your notes, describe when a FOO sort might be useful. Write down its worst-case complexity time for FOO sorts. How is the FOO sort different from other sorts?
+* Watch [Harvard CS50 on Selection Sort](https://www.youtube.com/watch?v=f8hXR_Hvybo)
+* Read [Harvard CS50 on Selection Sort](https://study.cs50.net/selection_sort) and the [Wikipedia on Selection Sort](http://en.wikipedia.org/wiki/Selection_sort)
+* In your notes, describe in your own words how a Selection Sort sort works and how you might describe it to someone else.
+* In your notes, manually diagram how a Selection Sort sort works over a small dataset
+* Following the tests we have provided, implement a Selection Sort sort in Ruby. Do *not* use built-in sorting methods. It is entirely possible to make the tests pass by just using the `.sort` method, but that defeats the purpose of this exercise.
+* In your notes, describe when a Selection Sort sort might be useful. Write down its worst-case complexity time for Selection Sort sorts. How is the Selection Sort sort different from other sorts?
 
 
 ### Linear Search
@@ -189,27 +192,16 @@ Tables will be set up by topic around the room. You will eventually visit all ta
 * Write an analogy that you might use to describe binary search.
 * Write when binary search is useful and how it is different from linear search.
 
-## Search
+## Traditional CS Challenges
+
+- Tower of Hanoi
+- Travelling Salesman
+- Prisoner's Dilemma
+- Game of Life
 
 
-# Topics:
-———————————————————————————————————————————
+# WIP
 
-- Big-O/Big-Theta
-- stack
-- queue
-- single linked list
-- double linked list
-- heap
-- binary tree
-- b-tree/trie/red-black tree
-- array
-- hash
-- associative array
-- string
-- struct/tuple/record
-- set
-- regular expressions
 
 ## Strategies:
 
@@ -227,18 +219,3 @@ Tables will be set up by topic around the room. You will eventually visit all ta
 - RSpec tests/Jasmine tests
 - traditional cs problems: tower of hanoi, travelling salesman
 
-## Order of lessons
-
-- Data structures
-- Sorting algorithms
-- Search
-
-## Common CS Challenges
-
-- Tower of Hanoi
-- Travelling Salesman
-- Prisoner's Dilemma
-- Game of Life
-
-![XKCD 835](http://imgs.xkcd.com/comics/tree.png)
-http://xkcd.com/835/
