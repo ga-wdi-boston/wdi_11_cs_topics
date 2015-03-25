@@ -6,6 +6,10 @@ class Node
     @next_node = nil
     @prev_node = nil
   end
+
+  def to_s
+    @value || nil
+  end
 end
 
 class DoubleLinkedList
@@ -16,22 +20,21 @@ class DoubleLinkedList
     @tail = nil
     if value
       @head = Node.new(value)
+      @tail = @head
     end
+    self
   end
 
   def append(value)
     node = Node.new(value)
     if empty?
       @head = node
-    elsif self.length == 1
-      @tail = node
-      @head.next_node = @tail
-      @tail.prev_node = @head
     else
       node.prev_node = @tail
       @tail.next_node = node
     end
     @tail = node
+    self
   end
 
   def prepend(value)
@@ -39,16 +42,12 @@ class DoubleLinkedList
     if empty?
       @head = node
       @tail = node
-    elsif self.length == 1
-      @tail = @head
-      @tail.prev_node = @head
-      @tail.next_node
-      @head = node
     else
       node.next_node = @head
       @head.prev_node = node
       @head = node
     end
+    self
   end
 
   def length
@@ -117,6 +116,8 @@ begin
 rescue NodeNotFoundError => e
   puts e.message
   # puts e.object
-end=end
+end
+
+=end
 
 

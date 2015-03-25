@@ -100,7 +100,6 @@ describe SingleLinkedList do
       ll.prepend(10)
       ll.append(20)
       ll.append(30)
-
       ll.reverse!
     end
 

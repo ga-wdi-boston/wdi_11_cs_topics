@@ -108,7 +108,6 @@ describe DoubleLinkedList do
           expect(filled_dll.length).to eq 4
         end
       end
-
     end
   end
 
@@ -147,7 +146,6 @@ describe DoubleLinkedList do
         # expect{ empty_dll.insert_after(10,20) }.to raise_error(EmptyListError)
       end
     end
-    
     context 'when the list is not empty' do
       let(:filled_dll) do
         dll.call(00)

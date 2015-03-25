@@ -1,4 +1,3 @@
-
 #Node class for a doubly linked list
 # @author Matt Lampe
 class Node

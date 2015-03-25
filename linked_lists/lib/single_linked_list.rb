@@ -9,22 +9,16 @@ class Node
   end
 
   def to_s
-    @value || nil
+    "#{@value}" || nil
   end
 end
 
 class SingleLinkedList
-  attr_accessor :head, :tail
+  attr_accessor :head
 
   # initializes the linked list
   def initialize(first_value=nil)
     @head = Node.new(first_value) if first_value
-  end
-
-  # adds the new_node after node
-  def insert_after(node, new_node)
-    new_node.next_node = node.next_node
-    node.next_node = new_node
     self
   end
 
@@ -65,10 +59,6 @@ class SingleLinkedList
     node
   end
 
-  # Recursive last method -- Optional
-  # def last_r
-  # end
-
   # calculates the length of the list
   def length
     count = @head ? 1 : 0
@@ -85,10 +75,10 @@ class SingleLinkedList
   # returns the node with that value or nil if none found
   def find(input)
     node = @head
-    while node.next_node && node.to_s != input
+    while node.next_node && node.value != input
       node = node.next_node
     end
-    node if node.to_s == input
+    node if node.value == input
   end
 
   # returns a new SingleLinkedList with all elements reversed
@@ -114,16 +104,24 @@ class SingleLinkedList
     end
     node.next_node = last
     @head = node
+    self
   end
 
-  # prints out the node
+  # adds the new_node after node
+  def insert_after(node, new_node)
+    new_node.next_node = node.next_node
+    node.next_node = new_node
+    self
+  end
+
+  # prints out the entire list
   def to_s
     node = @head
     while node.next_node
-      puts node.to_s
+      node.to_s
       node = node.next_node
     end
-    puts node.to_s
+    node.to_s
   end
 end
 
