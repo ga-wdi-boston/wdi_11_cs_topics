@@ -14,31 +14,7 @@ class Node
 end
 
 class Stack
-  attr_accessor :head
-
-  def initialize(first_value=nil)
-    # initializes the linked list
-    @head = Node.new(first_value) if first_value
-  end
-
-  def push(value)
-    # pushes a node into the stack
-    node = Node.new(value)
-    node.next_node = @head
-    @head = node
-  end
-
-  def pop
-    # pops the node from the stack
-    node = @head
-    @head = node.next_node
-    node
-  end
-
-  def peek
-    @head.value
-  end
-
+  # your code goes here
 end
 
 binding.pry

@@ -20,37 +20,5 @@ class Node
 end
 
 class MyQueue
-
-  attr_accessor :head, :tail
-
-  def initialize(first_value = nil)
-    node = Node.new(first_value) if first_value
-    @head = node
-    @tail = node
-  end
-
-  def push(value)
-    node = Node.new(value)
-    if empty?
-      @head = node
-    else
-      @tail.next_node = node
-    end
-    @tail = node
-  end
-
-  def pop
-    node = @head
-    @head = node.next_node
-    node
-  end
-
-  def peek
-    @head.value
-  end
-
-  def empty?
-    @head.nil?
-  end
-  
+  # your code goes here
 end
