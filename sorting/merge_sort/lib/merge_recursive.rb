@@ -4,7 +4,6 @@ def merge(a1, a2)
   # your code here
 end
 
-
 def merge_sort(a)
   # your code here
 end
