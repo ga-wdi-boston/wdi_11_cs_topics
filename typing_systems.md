@@ -6,7 +6,9 @@ Program will refuse to compile if argument passed to function does not match the
 
 ## Weak
 
-Program will allow compilation, but may have unexpected behavior if function is passed an argument of a typ
+Program will allow compilation, but may have unexpected behavior if function is passed an argument of a type
 
 
-# 
+# Dynamic/Duck
+
+Types are inferred by their use
