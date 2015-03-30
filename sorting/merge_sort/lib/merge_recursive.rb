@@ -19,7 +19,7 @@ def merge(a1, a2)
       a2 = a2[1...a2.size]
     end
   end
- end
+end
 
 
 def merge_sort(a)
