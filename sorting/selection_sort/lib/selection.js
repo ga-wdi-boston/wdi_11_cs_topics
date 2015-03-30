@@ -12,12 +12,10 @@ var selectionSort = function (a) {
       var tmp = a[i];
       a[i] = a[min];
       a[min] = tmp;
-      console.log(a);
+      // console.log(a);
     }
   }
-
   return a;
 };
-
-result = selectionSort(unsorted_array);
-console.log(result);
+// result = selectionSort(unsorted_array);
+// console.log(result);
