@@ -32,5 +32,3 @@ end
 entry = HashEntry.new :foo, :bar
 table = HashTable.new
 table << entry
-
-binding.pry
