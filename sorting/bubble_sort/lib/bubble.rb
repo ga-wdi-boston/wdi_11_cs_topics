@@ -15,6 +15,6 @@ def bubble_sort(list)
   list
 end
 
-unsorted_array = [5, 3, 42, 398, 28, 2, 20, 5, 2, 0, -20, 4]
+# unsorted_array = [5, 3, 42, 398, 28, 2, 20, 5, 2, 0, -20, 4]
 
-puts bubble_sort(unsorted_array)
+# puts bubble_sort(unsorted_array)

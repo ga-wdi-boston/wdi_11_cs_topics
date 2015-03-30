@@ -15,12 +15,9 @@ function bubbleSort(array) {
     for(j=0, stop=len-i; j < stop; j++) {
       if(array[j] > array[j + 1]){
         swap(array, j, j+1);
-        console.log(array);
+        // console.log(array);
       }
     }
   }
   return array
 };
-
-result = bubbleSort(unsorted_array);
-console.log(result);
