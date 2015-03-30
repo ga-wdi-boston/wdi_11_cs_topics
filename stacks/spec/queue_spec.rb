@@ -16,7 +16,7 @@ describe MyQueue do
   it 'adds to the queue' do
     @queue.push(2)
     expect(@queue.head.value).to eq(1)
-    expect(@queue.head.next_node).to eq(2)
+    expect(@queue.head.next_node.value).to eq(2)
   end
 
   it 'removes the first item from the queue' do
