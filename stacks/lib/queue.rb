@@ -9,7 +9,7 @@ require 'pry'
   ask if its empty
 =end
 
-class Node 
+class Node
   attr_accessor :value, :next_node
 
   def initialize(value = nil)
@@ -52,5 +52,5 @@ class MyQueue
   def empty?
     @head.nil?
   end
-  
+
 end
