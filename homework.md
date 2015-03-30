@@ -10,7 +10,7 @@ By 9am the next morning you must send a link to a Github repo or webpage with yo
 
 ## Monday
 
-Write an essay describing Queue, Stack, Linked Lists; what they are, how they are different, why we use them. It may be useful to include pseudocode, code, analogies, diagrams and references to external sources.
+Write an essay describing Queue and Stack; Sets, Associative Array & Array; what they are, how they are different, why we use them. It may be useful to include pseudocode, code, analogies, diagrams and references to external sources.
 
 ## Tuesday
 
