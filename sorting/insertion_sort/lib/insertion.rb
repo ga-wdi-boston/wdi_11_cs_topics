@@ -12,5 +12,3 @@ def insertion_sort(array)
 
   return array
 end
-
-puts insertion_sort(unsorted_array)
