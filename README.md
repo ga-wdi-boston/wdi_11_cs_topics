@@ -93,7 +93,7 @@ Tables will be set up by topic around the room. You will eventually visit all ta
 1. Watch [Harvard CS50's video on singly linked lists](https://www.youtube.com/watch?v=5nsKtQuT6E8)
 2. Read about [linked lists from Harvard CS50](https://study.cs50.net/linked_lists) and [linked lists on the wikipedia](http://en.wikipedia.org/wiki/Linked_list), focusing on singly linked lists
 3. In your notes, diagram a singly linked list and its common operations
-4. Implement a singly linked list in Ruby, using the tests we have provided as a guide.
+4. Implement a singly linked list in Ruby, [using the tests we have provided as a guide](https://github.com/ga-wdi-boston/wdi_11_cs_topics/tree/master/linked_lists).
 5. Above each singly linked list operation, write its worst-case time-complexity (Big-O) as a comment
 6. In your notes, record when you might use a singly linked list and why they are useful
 
@@ -102,7 +102,7 @@ Tables will be set up by topic around the room. You will eventually visit all ta
 1. Watch [this video on doubly linked lists](https://www.youtube.com/watch?v=k0pjD12bzP0); ignore the C++ code parts
 2. Read about [linked lists from Harvard CS50](https://study.cs50.net/linked_lists) and [linked lists on the wikipedia](http://en.wikipedia.org/wiki/Linked_list), focusing on doubly linked lists
 3. In your notes, diagram a doubly linked list and its common operations
-4. Implement a doubly linked list in Ruby, using the tests we have provided as a guide.
+4. Implement a doubly linked list in Ruby, [using the tests we have provided as a guide](https://github.com/ga-wdi-boston/wdi_11_cs_topics/tree/master/linked_lists).
 5. Above each doubly linked list operation, write its worst-case time-complexity (Big-O) as a comment
 6. In your notes, record when you might use a singly linked list and why they are useful
 
